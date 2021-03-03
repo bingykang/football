@@ -19,7 +19,7 @@ if [[ "$OSTYPE" == "darwin"* ]] ; then
 fi
 
 N_CORES=$(python -c 'import multiprocessing as mp; print(mp.cpu_count())')
-
+N_CORES=4
 set -e
 # Delete pre-existing version of CMakeCache.txt to make 'pip3 install' work.
 rm -f third_party/gfootball_engine/CMakeCache.txt
